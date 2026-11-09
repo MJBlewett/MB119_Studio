@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MB119 - Games</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h2>Welcome to</h2>
+        <h1>MB119 Studio - Games</h1>
+        <div class="navbar">
+            <a href="index.html" class="navbar_links">Home</a>
+            <a href="games.html" class="navbar_links">Games</a>
+            <a href="movies.html" class="navbar_links">Movies</a>
+            <a href="credits.html" class="navbar_links">Credits</a>
+        </div><!--END OF NAVBAR-->
+        <div id="header">
+            <h3>WELCOME TO GAMES:</h3>
+        </div><!--END OF #HEADER-->
+        <div style="width: 800px; color: orange; font-size: 20px;">
+            <p>Welcome to our Games Page. We hope you enjoy our fun and interesting range of games. 
+                Whether it is a simple and fun platformer, an adrenaline-filled survival game, 
+                or a challenging adventure game you want, you can find it here!</p>
+        </div><!--END OF STYLE-->
+        <div id="header">
+            <h3>Genre:</h3>
+        </div><!--END OF #HEADER-->
+        <div id="subheader">
+            <h4>Platformer:</h4>
+        </div><!--END OF #SUBHEADER-->
+        <div class="grid">
+            <div class="card">
+                <video src="Background_Vid1.mp4"
+                        muted
+                        loop
+                        poster="Background_Pic.png"
+                        width="100%"
+                        object-fit: cover;>
+                </video>
+                <script>
+                    document.querySelectorAll('.card').forEach(card => {
+                    const video = card.querySelector('video');
+
+                    card.addEventListener('mouseenter', () => {
+                        video.play();
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        video.pause();
+                        video.currentTime = 0; // Rewinds it so it goes back to being still on frame 1
+                    });
+                    });
+                </script>
+                <div class="text">
+                    <p>Name: Knight Adventures</p>
+                    <p>Genre: Platformer</p>
+                    <p>Available: Here</p>
+                    <a href="Knight Adventures.exe" style="border: 2px solid orange; padding: 2px;">DOWNLOAD</a>
+                </div>
+            </div><!--END OF CARD-->
+        </div><!--END OF GRID1-->
+        <div id="subheader">
+            <h4>Mission:</h4>
+        </div><!--END OF #SUBHEADER-->
+        <div class="grid">
+            <div class="card">
+                <img src="Coming_Soon.png" alt="Coming Soon" width="100%"
+                    object-fit: cover;>
+                <div class="text">
+                    <p>Name: Code Name Clyde</p>
+                    <p>Genre: Mission/Adventure</p>
+                    <p>Release Date: 18 October 1985</p>
+                </div>
+            </div><!--END OF CARD2-->
+        </div><!--END OF GRID2-->
+        <div id="subheader">
+            <h4>Survival:</h4>
+        </div><!--END OF #SUBHEADER-->
+        <div class="grid">
+            <div class="card">
+                <img src="Coming_Soon.png" alt="Coming Soon" width="100%"
+                    style="object-fit: cover;">
+                <div class="text">
+                    <p>Name: Project: Isolated</p>
+                    <p>Genre: First Person Shooter/Survival</p>
+                    <p>Release Date: 3 january 1987</p>
+                </div>
+            </div><!--END OF CARD2-->
+        </div><!--END OF GRID2-->
+        <div id="footer">
+            <p style="font-weight: bolder; text-decoration: underline;">Find me on:</p>
+            <p style="color: orange;">Youtube: <a href="https://www.youtube.com/@MB119_Studio" style="text-decoration: none;">@MB119_Studio</a></p>
+        </div><!--END OF FOOTER-->
+    </body>
+</html>

@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    color: orangered;
+    font-size: 58px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: peachpuff;
+}
+
+h2 {
+    text-align: center;
+    color: orange;
+    font-size: 42px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    background-color: papayawhip;
+}
+
+.text {
+    color: red;
+    font-size: 18px;
+    line-height: 0.8;
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(255, 244, 225);
+}
+
+#footer {
+    text-align: center;
+    color: orangered;
+    font-size: 24px;
+    border: 3px dashed lightsalmon;
+    padding: 1px;
+    line-height: 0.5;
+    margin-top: 50px;
+}
+
+a:link, a:visited{
+    color: red;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: salmon;
+}
+
+#header {
+    color: orangered;
+    text-decoration: 3px underline;
+    margin: 5px 5px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+#subheader {
+    color: orangered;
+    text-decoration: 3px underline;
+    margin: 5px 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.navbar {
+    padding: 20px 0;
+    text-align: center;
+    border: 3px dashed lightsalmon;
+}
+
+.navbar_links {
+    color: orangered;
+    background-color: rgb(255, 190, 69);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    margin: 0 8px;
+}
+
+.navbar_links:hover {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 8px;
+}
+
+.card {
+    background-color: peachpuff;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.card:hover {
+    background-color: rgb(255, 199, 149);
+}
